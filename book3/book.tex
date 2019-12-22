@@ -1,0 +1,98 @@
+\documentclass[fontsize=24pt,letterpaper]{scrartcl}
+
+% Using the pocketmod package and template by LianTze Lim
+% https://www.overleaf.com/latex/examples/creating-pocketmods-with-latex/nqbhpnrkskrx
+
+
+%% Adjust to taste
+\usepackage[margin=0.75in,includefoot,bottom=0.3in,footskip=2em]{geometry}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[lining,tabular]{fbb}
+\usepackage[scaled=.95,type1]{cabin}
+\usepackage[varqu,varl]{zi4}
+\usepackage[libertine,bigdelims]{newtxmath}
+
+\usepackage[showmarks]{pocketmod}
+
+
+\title{Sudoku$^4$}
+\author{Number Puzzles}
+\date{\texttt{book 3}}
+
+\setcounter{secnumdepth}{0}
+
+\usepackage{sudoku}
+\setlength\sudokusize{15cm}
+\renewcommand*\sudokuformat[1]{\Large\sffamily#1}
+
+
+\begin{document}
+
+\maketitle
+\setcounter{page}{0}
+\thispagestyle{empty}
+\clearpage
+
+{\Large \bfseries \sffamily puzzle 1}
+\vspace{2cm}
+\input{p1.tex}
+\clearpage
+\begin{flushright}
+{\Large \bfseries \sffamily puzzle 2}
+\end{flushright}
+\vspace{1cm}
+\input{p2.tex}
+
+\clearpage
+{\Large \bfseries \sffamily puzzle 3}
+\vspace{2cm}
+\input{p3.tex}
+
+\clearpage
+\begin{flushright}
+{\Large \bfseries \sffamily puzzle 4}
+\end{flushright}
+\vspace{1cm}
+\input{p4.tex}
+
+\clearpage
+
+{\Large \bfseries \sffamily solutions}
+\setlength\sudokusize{8cm}
+\renewcommand*\sudokuformat[1]{\sffamily#1}
+\vspace{1cm}
+\input{a1.tex}
+\begin{center}
+    solution 1
+\end{center}
+\vspace{0.2cm}
+%solution 2
+\input{a2.tex}
+\begin{center}
+    solution 2
+\end{center}
+
+
+\clearpage
+\begin{flushright}
+{\Large \bfseries \sffamily solutions}
+\end{flushright}
+\vspace{1cm}
+\input{a3.tex}
+\begin{center}
+    solution 3
+\end{center}
+%solution 4
+\input{a4.tex}
+\begin{center}
+    solution 4
+\end{center}
+\clearpage
+
+\vspace*{\stretch{1}}
+{\centering\Huge\itshape\bfseries Have fun!\par}
+\vspace*{\stretch{1}}
+
+\end{document}
